@@ -37,16 +37,23 @@ module.exports.getCartsbyUserid = (req, res) => {
 
 	console.log('startDate and endDate isss', startDate, endDate);
 
+	let getQuery = Cart.find({
+		userId: userId,
+		date: {
+			$gte: new Date(startDate).toISOString(),
+			$lt: new Date(endDate).toISOString()
+		}
+	})
+	.select('-_id -products._id').getQuery();
+
+	console.log('final query isss', getQuery);
+
 	Cart.find({
 			userId: userId,
-			// date: {
-			// 	$gte: new Date(startDate),
-			// 	$lt: new Date(endDate)
-			// },
 			date: {
-				$gte: moment(startDate).toISOString(true),
-				$lt: moment(endDate).toISOString(true)
-			},
+				$gte: new Date(startDate).toISOString(),
+				$lt: new Date(endDate).toISOString()
+			}
 		})
 		.select('-_id -products._id')
 		.then((carts) => {
