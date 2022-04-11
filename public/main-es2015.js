@@ -1825,7 +1825,7 @@ __webpack_require__.r(__webpack_exports__);
 const serverIP = {
     // apiUrl: 'http://localhost:8765/',
     // imgUrl: 'http://localhost:8765/images/'
-    apiUrl: '/api',
+    apiUrl: '/api/',
     imgUrl: '/api/images/'
 };
 

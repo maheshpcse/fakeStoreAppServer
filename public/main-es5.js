@@ -3132,7 +3132,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var serverIP = {
       // apiUrl: 'http://localhost:8765/',
       // imgUrl: 'http://localhost:8765/images/'
-      apiUrl: '/api',
+      apiUrl: '/api/',
       imgUrl: '/api/images/'
     };
     /***/
