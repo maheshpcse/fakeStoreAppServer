@@ -1823,8 +1823,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 
 const serverIP = {
-    apiUrl: 'http://localhost:8765/',
-    imgUrl: 'http://localhost:8765/images/'
+    // apiUrl: 'http://localhost:8765/',
+    // imgUrl: 'http://localhost:8765/images/'
+    apiUrl: '/api',
+    imgUrl: '/api/images/'
 };
 
 

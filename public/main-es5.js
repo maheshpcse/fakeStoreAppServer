@@ -3130,8 +3130,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     "./node_modules/tslib/tslib.es6.js");
 
     var serverIP = {
-      apiUrl: 'http://localhost:8765/',
-      imgUrl: 'http://localhost:8765/images/'
+      // apiUrl: 'http://localhost:8765/',
+      // imgUrl: 'http://localhost:8765/images/'
+      apiUrl: '/api',
+      imgUrl: '/api/images/'
     };
     /***/
   },

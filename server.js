@@ -34,13 +34,13 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 //view engine
-app.get('/*', function (req, res) {
+app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname + '/public/index.html'));
 });
-app.use('/products', productRoute);
-app.use('/carts', cartRoute);
-app.use('/users', userRoute);
-app.use('/auth', authRoute);
+app.use('/api/products', productRoute);
+app.use('/api/carts', cartRoute);
+app.use('/api/users', userRoute);
+app.use('/api/auth', authRoute);
 
 // MongoDB connection options
 const options = {
